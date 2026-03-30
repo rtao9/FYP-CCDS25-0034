@@ -2,16 +2,17 @@
 
 This repository contains the implementation of an agentic framework designed for deep understanding of long-form video content. By leveraging a multi-agent system and an **Evolving Memory Graph**, the system extracts features, constructs a world memory, and performs complex reasoning over extended durations.
 
+![Example](figs/example_memory.png)  
 ---
 
 ## Project Overview
+![Architecture Diagram](figs/archi_overall.png)  
 
 Traditional video models often struggle with temporal consistency in long-form content. This project addresses those challenges by splitting responsibilities across three specialized agents:
-![Architecture Diagram](figs/archi_overall.png)
 * **Multimodal Agent:** Handles feature extraction using **InsightFace** and performs entity clustering via **HDBSCAN**.
 * **Memory Agent:** Dynamically builds and updates a graph-based world memory, using **Gemini** to generate semantic nodes from raw clusters.
 * **Prompt Agent:** Executes retrieval and reasoning using a **ReAct** (Reasoning and Acting) framework to answer complex queries across the timeline.
-
+> **Note:** The architectural diagrams can be found in the `/figs` folder.
 ---
 
 ## Architecture
@@ -22,7 +23,7 @@ The system follows a modular agentic architecture:
 2.  **Memory Construction Layer:** An Evolving Memory Graph that transforms raw visual data into a structured world memory.
 3.  **Reasoning & Retrieval Layer:** Navigates the memory graph to provide context-aware answers to user queries.
 
-> **Note:** The architectural diagrams can be found in the `/figs` folder.
+![Architecture Diagram](figs/archi_react.png)  
 
 ---
 
@@ -33,6 +34,9 @@ The system follows a modular agentic architecture:
 * **LLM/Reasoning:** Gemini API, ReAct Framework
 * **Evaluation:** VidMME Benchmark
 ---
+
+## VidMME Benchmark Result
+![VidMME Benchmark](figs/result_vidmme.png)  
 
 ## Getting Started
 
