@@ -1,0 +1,1 @@
+{"video_id": "test", "video_path": "data/test/raw/test.mp4", "clip_path": "data/test/processed/clips", "intermediate_path": "data/test/processed/intermediate_outputs", "mem_path": "data/test/processed/memory_graphs/test.pkl"}

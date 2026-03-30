@@ -1,0 +1,14 @@
+{
+    "gpt-4o-2024-11-20": {
+        "base_url": "",
+        "api_key": ""
+    },
+    "gemini-2.5-flash-lite": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "api_key": ""
+    },
+    "text-embedding": {
+        "base_url": "",
+        "api_key": ""
+    }
+}
